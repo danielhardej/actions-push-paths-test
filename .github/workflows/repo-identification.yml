@@ -3,9 +3,6 @@ on:
   push:
     paths:
       - '.github/workflows/repo-identification.yaml'
-  pull_request:
-    paths:
-      - '.github/workflows/repo-identification.yaml'
 
 jobs:
   myJob:
