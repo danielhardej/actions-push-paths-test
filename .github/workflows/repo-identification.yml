@@ -2,6 +2,10 @@ name: Workflow on change to repo-identification.yaml workflow
 on:
   workflow_dispatch:
 
+  push:
+    paths:
+      - '.github/workflows/repo-identification.yaml'
+
 jobs:
   myJob:
     runs-on: ubuntu-latest
@@ -11,4 +15,4 @@ jobs:
 
       - name: Run some task for testing
         run: |
-          echo "This workflow was changed again..."
+          echo "This workflow was changed"
