@@ -14,5 +14,5 @@ jobs:
 
       - name: Run some task for testing
         run: |
-          echo "repo-identification.yaml workflow was changed"
+          echo "A file was changed!"
           echo "Done!!!"
