@@ -1,5 +1,7 @@
 name: Workflow on change to repo-identification.yaml workflow
 on:
+  workflow_dispatch:
+  
   push:
     paths:
       - 'repo-identification.yaml'
