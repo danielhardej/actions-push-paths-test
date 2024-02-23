@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/repo-identification.yaml'
+      - 'README.md'
 
 jobs:
   myJob:
