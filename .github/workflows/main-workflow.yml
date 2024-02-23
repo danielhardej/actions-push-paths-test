@@ -2,7 +2,7 @@ name: Main workflow to run on change to repo-identification.yaml workflow
 on:
   push:
     paths:
-      - '.github/workflows/repo-identification.yaml'
+      - '.github/workflows/repo-identification.yml'
       - 'README.md'
 
 jobs:
