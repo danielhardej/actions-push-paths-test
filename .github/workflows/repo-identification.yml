@@ -2,7 +2,7 @@ name: Workflow on change to repo-identification.yaml workflow
 on:
   push:
     paths:
-      - '.github/workflows/repo-identification.yaml'
+      - 'repo-identification.yaml'
 
 jobs:
   myJob:
