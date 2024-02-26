@@ -1,0 +1,18 @@
+name: Workflow on change to repo-identification.yaml workflow
+on:
+  workflow_dispatch:
+
+  push:
+    paths:
+      - '.github/workflows/repo-identification.yml'
+
+jobs:
+  myJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run some task for testing
+        run: |
+          echo "This workflow was changed."
