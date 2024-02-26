@@ -4,7 +4,7 @@ on:
 
   push:
     paths:
-      - '.github/workflows/repo-identification.yml'
+      - 'repo-identification.yml'
 
 jobs:
   myJob:
