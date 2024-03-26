@@ -1,10 +1,10 @@
-name: Workflow on change to repo-identification.yaml workflow
-on:
-  workflow_dispatch:
+name: Repo Identification
 
+on:
   push:
     paths:
-      - 'repo-identification.yml'
+      - 'repo-identification.yaml'
+      - '.github/CODEOWNERS'
 
 jobs:
   myJob:
