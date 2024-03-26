@@ -1,0 +1,14 @@
+name: Repo Identification
+
+on:
+  push:
+    paths:
+      - 'repo-identification.yaml'
+      - '.github/CODEOWNERS'
+
+jobs:
+  notify:
+    uses: Exabeam/actions-reusable-workflows/.github/workflows/repo-identification.yaml@master
+    with:
+      app-name: exa-query-builder
+    secrets: inherit
